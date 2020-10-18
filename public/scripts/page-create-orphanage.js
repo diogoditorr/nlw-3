@@ -31,6 +31,8 @@ map.on('click', (event) => {
 
 // adicionar o campo de fotos
 function addPhotoField() {
+    // TODO: Máximo de 6 fotos
+
     // pegar o container de fotos #images
     const container = document.querySelector('#images');
 
@@ -83,4 +85,17 @@ function toggleSelect(event) {
     const input = document.querySelector('[name="open_on_weekends"]')
     
     input.value = button.dataset.value
+}
+
+// validate form
+function validate(event) {
+    // TODO: Validar se o usuário marcou alguma localização no mapa
+    // antes de enviar o formulário
+
+    // validar se lat e lng estão preenchidos
+    const needsLatAndLng = false
+    if (needsLatAndLng) {
+        alert('Selecione um ponto no mapa!')
+        event.preventDefault()
+    }
 }
