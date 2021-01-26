@@ -16,13 +16,26 @@ aside {
     justify-content: space-between;
 }
 
-aside h2 {
+aside header {
+    display: flex;
+    flex-direction: column;
+}
+
+aside header img {
+    align-self: center;
+    width: 58px;
+    height: 68px;
+
+    animation-delay: 1.7s;
+}
+
+aside header h2 {
     margin-top: 6.4rem;
 
     font: 800 clamp(2rem, 5vw, 3.6rem)/1.1 'Nunito', sans-serif;
 }
 
-aside p {
+aside header p {
     margin-top: 2.4rem;
     font: 400 1.6rem/1.5 'Nunito', sans-serif;
 }

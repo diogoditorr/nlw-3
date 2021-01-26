@@ -30,6 +30,16 @@
     }
 }
 
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1440deg);
+    }
+}
+
 .animate-up {
     animation-name: up;
     animation-duration: 300ms;
@@ -39,10 +49,36 @@
 .animate-right {
     animation-name: right;
     animation-duration: 1s;
+    animation-timing-function: cubic-bezier(0.95, 0, 0.35, 1);
+}
+
+.animate-right-1-5 {
+    animation-name: right;
+    animation-duration: 1.5s;
+    animation-timing-function: cubic-bezier(0.95, 0, 0.35, 1);
+}
+
+.animate-right-2 {
+    animation-name: right;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.95, 0, 0.35, 1);
+}
+
+.animate-right-3 {
+    animation-name: right;
+    animation-duration: 3s;
+    animation-timing-function: cubic-bezier(0.95, 0, 0.35, 1);
 }
 
 .animate-appear {
     animation-name: appear;
     animation-duration: 1s;
     animation-fill-mode: backwards; 
+}
+
+.animate-rotate {
+    animation-name: rotate;
+    animation-duration: 3s;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: cubic-bezier(0.95, 0, 0.35, 1);
 }

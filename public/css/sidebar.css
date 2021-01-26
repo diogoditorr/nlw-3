@@ -11,6 +11,10 @@ aside.sidebar {
     align-items: center;
 }
 
+aside.sidebar img {
+    animation-delay: 1s;
+}
+
 aside.sidebar footer button {
     width: 48px;
     height: 48px;
